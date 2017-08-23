@@ -35,6 +35,11 @@ class UW_Driver(object):
                 "expects two integer values (year, week) or None.".format(prefix, suffix)
             )
 
+    def __feds_get(self, suffix, event_id=None):
+        prefix = "feds"
+        endpoint = self.__update_url(prefix, suffix, event_id)
+        return self.__get_data(endpoint)
+
     ### Food Services ###
 
     def foodservices_menu(self, year=None, week=None):
@@ -68,6 +73,17 @@ class UW_Driver(object):
     def foodservices_products(self, product_id):
         suffix = "products/{}".format(product_id)
         return self.__foodservices_get(suffix)
+
+    ### FEDS ###
+
+    def feds_events(self, event_id=None):
+        suffix = "events"
+        return self.__feds_get(suffix, event_id)
+
+    def feds_locations(self):
+        suffix = "locations"
+        return self.__feds_get(suffix)
+
 
     ### Awards ###
 
