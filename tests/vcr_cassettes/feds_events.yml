@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/feds/events.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA72WXW/aMBSG/4qXi13hEjsJCb5jWqtWWtVqIFVTqSYrccBacJjjlE0V/33HISuB
+        8RXUVSIoduxjv49fH/vFmQnDHfbiaPGzFIUpHOb1vND3Oo6RM6jgs7nDSOB6AaWUBB0HqkwJzajr
+        dqB3UfCJcJjzddUfFWUcQ2VaZo79bKZ58l0mECKk3t8KGG+57DgJt0M/vjj2u08DEvTsqCaz8W6U
+        EVpxI3PFM3SnpVCmKkHYLI9Xr0yVWVZNSRvoQ10SYrePXTJyXVb9sOvDP/QRKmm2CP5tATHFJIeB
+        QNyjcy0n0wweg8QzDO08dZxyDjMW6zAhJtGIuMyPGCWvYUqdQYupMXM27o67i8XiIhVJcRHzcbcK
+        Ne7Kpjacr7WNu86y88oD1mHN4640KE/Rvc6fpYoF4ipBg5nQMuaqLR7vffH0mdsKz7zWiHmtbz8i
+        EjQQXUkNBvwmuH5zIGSHo84H0mO01wZIaoXh3yBsHwnPdf1oTeIBxtVZnjc5IDuJd4JxaedddIZz
+        qaVBn0qZJVJN0Kp6F5qoQhMwj7Cg3wbNolbaBINtzE2fRGEjtYw0V0Uq9Lh7+SuecjURbf3iH91A
+        vbf0S8g8vw0UUwsUtbwDrgncxv6BMGg4zRcxL8QpGKrZHcQALcITnHLQEpBdo1a7Bcq4qGVguik4
+        pKSxTUQW5zOBHoT4cYLeXb7f2hnhGyx7hCmxYK32VmlisZKDFyAHB9sLvUc3GuiYJ+LDifr7xzID
+        Jf8nM/gU8ubZNHgl0pphPdVtQHQN6LM9Q65KU2qBbgVDVzzL0BluOU7LO4XWbW7kc31dGHdvVAH0
+        6uI5JENGW+XYxB48aUUDp0ACN9HuJxoSb030XotCJhAOfURDoWSu0dDwNEVfShVPRa7OhkzoMcjE
+        Y95xyPd5Jg3cNjI7wzyW8DJYcC0U3GYPUqXVQtOIBS1vOTURXFQ8cGF54KzmsYv05onWuPkMrodg
+        V4W+lqccX547cqMtJJvQdrU4NW8HmParUwvWpZXN+LQAlyms4amy9tPyD6JoI8KfDAAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['792']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 21:03:35 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1
