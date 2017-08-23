@@ -1,5 +1,8 @@
 from . import session
 
+class InvalidParameters(Exception):
+    pass
+
 
 class UW_Driver(object):
 
@@ -12,8 +15,17 @@ class UW_Driver(object):
         return json_data["data"]
 
     # Food Services
-    def foodservices_menu(self):
-        endpoint = "foodservices/menu"
+    def foodservices_menu(self, year=None, week=None):
+        endpoint = ""
+        if (year == None and week == None):
+            endpoint = "foodservices/menu"
+        elif (year != None and week != None):
+            endpoint = "foodservices/{}/{}/menu".format(year, week)
+        else:
+            raise InvalidParameters(
+                "ERROR: foodservices/{year}/{week}/menu endpoint "
+                "expects two integer values (year, week) or None."
+            )
         return self.__get_data(endpoint)
 
     # Awards
