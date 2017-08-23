@@ -3,7 +3,7 @@ import vcr
 from uwaterloodriver import UW_Driver
 
 @fixture
-def menu_keys():
+def foodservices_menu_keys():
     # Responsible for only returning the test data
     return ['date', 'outlets']
 
@@ -11,8 +11,20 @@ def menu_keys():
 def date_keys():
     return ['year', 'week', 'start', 'end']
 
+@fixture
+def outlets_keys():
+    return ['outlet_name', 'outlet_id', "menu"]
+
+@fixture
+def menu_keys():
+    return ['date', 'day', 'meals', 'notes']
+
+@fixture
+def meals_keys():
+    return ['lunch', 'dinner']
+
 @vcr.use_cassette('vcr_cassettes/foodservices_menu.yml', filter_query_parameters=['key'])
-def test_foodservices_manu(menu_keys, date_keys):
+def test_foodservices_menu(foodservices_menu_keys, date_keys):
     """Tests an API call to /foodservices/menu/ endpoint."""
 
     uw_driver = UW_Driver()
@@ -20,6 +32,23 @@ def test_foodservices_manu(menu_keys, date_keys):
 
     assert isinstance(response, dict)
     # Not testing subkeys in 'outlets' because it could be empty at certain times.
-    assert set(menu_keys).issubset(response.keys()), "All keys should be in the response."
+    assert set(foodservices_menu_keys).issubset(response.keys()), "All keys should be in the response."
     assert set(date_keys).issubset(response['date'].keys()), "All date keys should be present."
     assert isinstance(response['outlets'], list)
+
+@vcr.use_cassette('vcr_cassettes/foodservices_year_week_menu.yml', filter_query_parameters=['key'])
+def test_foodservices_year_week_menu(foodservices_menu_keys, date_keys, outlets_keys, menu_keys, meals_keys):
+    """Tests an API call to /foodservices/{year}/{week}/menu endpoint.
+        year = 2017, week = 20"""
+
+    uw_driver = UW_Driver()
+    response = uw_driver.foodservices_menu(2017, 20)
+
+    assert isinstance(response, dict)
+    assert isinstance(response['outlets'], list)
+    assert set(date_keys).issubset(response['date'].keys()), "All date keys should be present."
+    assert set(foodservices_menu_keys).issubset(response.keys()), "All keys should be in the response."
+    assert set(outlets_keys).issubset(response['outlets'][0].keys()), "All outlets keys should be present."
+    assert set(menu_keys).issubset(response['outlets'][0]['menu'][0].keys()), "All menu keys should be present."
+    assert set(meals_keys).issubset(response['outlets'][0]['menu'][0]['meals'].keys()), "All meal keys should be present."
+
