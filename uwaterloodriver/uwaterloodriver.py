@@ -1,5 +1,6 @@
 from . import session
 
+# Exception for inccorect number or invalid parameters passed to endpoint.
 class InvalidParameters(Exception):
     pass
 
@@ -14,7 +15,8 @@ class UW_Driver(object):
         json_data = response.json()
         return json_data["data"]
 
-    # Food Services
+    ### Food Services ###
+
     def foodservices_menu(self, year=None, week=None):
         endpoint = ""
         if (year == None and week == None):
@@ -28,7 +30,20 @@ class UW_Driver(object):
             )
         return self.__get_data(endpoint)
 
-    # Awards
+    def foodservices_notes(self, year=None, week=None):
+        endpoint = ""
+        if (year == None and week == None):
+            endpoint = "foodservices/notes"
+        elif (year != None and week != None):
+            endpoint = "foodservices/{}/{}/notes".format(year, week)
+        else:
+            raise InvalidParameters(
+                "ERROR: foodservices/{year}/{week}/notes endpoint "
+                "expects two integer values (year, week) or None."
+            )
+        return self.__get_data(endpoint)
+
+    ### Awards ###
 
     def awards_graduate(self):
         endpoint = "awards/graduate"

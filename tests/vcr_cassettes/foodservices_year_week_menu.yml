@@ -1,0 +1,47 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/foodservices/2017/20/menu.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA8VXbW/bNhD+K4S+9IuDSrJlx/k2uXOCrumc2liBrUFwkWiLEEW6lNjAC/Lfd6Rf
+        EotOInnphgCxTIvHu+eeu3t47xW0Au/s3lP0u6ZlVXpn3X534Icdr2IFLkCx9M6CyO9GfjQY9Doe
+        LlUaXwt9v4O7yxIW1Dvzvqz3k1InCS7ONffMz1Um0xuWoolwGGwX8LyHh46Xwvpo/KTm847S3Njt
+        eCsKyjwFA3ueqvAA8+3Ej06CCA1TkT5dGnpoTuqKUxPAX/eb5xsBhfHtUqeMviu97TvWoch4I7R9
+        fe3B/hEprMxWKcyDeRd4abzkWiSZ3bVUMtXJ7pRYz+fAJZlWK07JKGNJTgWZoatUleTu23sSc21+
+        oLSk5INClJhYoOmtHeNVGPQxZnS3uqlWS2P2sxTkD7rANCkGAgN1Dj5XCBz5BMUtibVaUFWzKTTn
+        ezbNwgE7E8yfJOdCJknGajaCKDrd9+upT9fmJyHw5EO4QE5TElMQZc1o1z91jR6OcW3kT1bVHQt7
+        gb9v4wI48EM2RrBE0AEThJlCaxOpKnlLOebsUpeZkrJwovb9ttn4SFW+y77J+iWIhSS//IAEUmQH
+        0ggaJegaOS1kRcvHhNV52t/xdIbF15SoW+dGgGgcTRZcXmOYY4QJAZFuqF3HsNvzGyZ5umTJikyx
+        D1RoGPuMJBMQCaZ+XT/nGjEsJK8f8Qx+L5ESXZ2/K8mYYjNTzey5/n4AjrHnmXCrxR88Xy2uoSvN
+        hASL4RcJZYXArjfcYieZmRVIm5HGtW0NYvnRuZOYIDxYOQ2IN9gR7ytNRRvqvQHsI5lIoQ1FlolU
+        gkwzxXBK1aLDgdO2dMegCtOrp6DNVCO4AbClinrL8XvBQUa/yLjg2/veXl/A56XEcUQmFJKMxPEV
+        Oefwdx2VMBp22wYSK10mGa0qWBfoKJMOPmGv39bsTM41mbE8B6R9iWSp2+z3W7fLr4ynu/ZLRlKX
+        9p8D+fCVsdiAtKeP3TLTqm277JALUD9QizBbp9irhE2bHUwjJRkqIVEdSekLKeiKnIPiLCGXWB23
+        wHkdhMAPg7bwPraRT5ixhWg4en5669zW8EgrtTq6s5W0ALWy+fhd4Zil6wpKrRhylFXYbygUpt81
+        lJk1G3NIciteyBWOWEjZmw3v4Y6OY8X+0wb6q1hwhgGuleqYbWIdozrKMCMVPjHqsK8bDBvi584w
+        CyXqSpkwwUy1lBVzpub/xkVFoVgRK387ZKpFiuGnOHcLo0A2en2GYhGlYlOvD6l0ZhXTmIPIEXoK
+        +QYW25/rRYB0DRrCbacP+YiUxzdWx/Hz2tjdvzVNMIlYXBOuazensPvmVydUJwiJkhiInNeFSuM8
+        bobrZylTRyMO69XvDJAnPPtp0tsGitKWTJijk8PhacOEj/BSbu4tyPyp1EtysuVqzEq8hdeZNKgb
+        /hdhHy38HJd3YxULLE1BkViZBsGZqYa71LnFhoOotaD7jSMHWW5v49wV6a9qinbYHKkvLCdiHP30
+        2EHogosKtqL0ibCyI1IwDPAZjkThm3HkuMHmEsS0ZSLn26ugbZaAssHxfdBadbqnfZK3OLPUM/Cc
+        +q9w7yWIrvHv4R++gEZdahMAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['1216']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 16:29:34 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1
