@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/foodservices/outlets.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6WUy27CMBBFf8Xyot2kUh7l0ewooitQEajdVBUyyYRYcezgBxVC/HudQheNo6Io
+        y7ken+uM7uSES9AExycsYW9AaYXjaBiNwrGHNS2tQMoKx8HAjwbBKIwiD1tJG9sW+r5nbytFdoBj
+        vLrcR8okiRUzw3B9rHORbmhqEeE4+hWs3/ns4ZTU1h8nLIxmoH/abM+14qSsuc+Co0lVgaYaPaBp
+        LiqlaVIoS8+J2mwlkCIjSuPYvyjM8CS3fpcqpZyDtIdn74/Pk+sjCuBpCzf4jxs0uKHvgKX4UiDv
+        +5IDF2y2pADZdRTOkx3y7AjotYK6u+c0HpvoFyJLtCCyAN2TPXTQNn70QBiyHtAzHqFDz7JbSP8G
+        ctBEzune0BRNlALdN88OfGFSCm2h65aNsMldTtZoLgzftYy4WzacVV9aiDyiJTN9d2XURK9m78CI
+        poL3Hci4iV7bMkdrmsI11xUjCfz8qyBDd0jnUCeybFumbpl0vuqN04Pdf6qPaMrMtvPQPs/f/fLN
+        agAGAAA=
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['404']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 19:40:33 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

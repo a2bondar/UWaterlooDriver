@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/foodservices/2017/15/notes.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0WNy27CMBBFf8WadSL5AbVq1llX6oIuCkIWGUpEbId4vIry74ypELvRuXPPXSAg
+        eXALzHgvmCmDMx/GatsADYGBDxM4tZVmq6w2pgFGVPhNS9lwO2f/h+Dg+78vcjmfGV7KCDWma+pP
+        Q88K/WlfgPfWtYHe1+nfpR5VoaWyrdy0asPVVGhEOkUfnvZuj6OnIcV3VK2sjOlZPsDXhFEotTPS
+        B9EK66ScgrikWXQ+E87iB/GGsT8ArMf1ARMwRJb6AAAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['204']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 19:40:33 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

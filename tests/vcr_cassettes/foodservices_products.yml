@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/foodservices/products/1386.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA12Tz3KjMAzGX8XjM4cYh5DyDt3DdmevjGoc4hn/obLdmWwn774yEGhzwv7pk/Qh
+        xBd3OgHvvjjqj6xjiryTJ9nWp4on4wiAm3gnmoNsRCukrDihlElWHw4VZccIo+Yd/73ks5iVInjJ
+        lpdwuoahNwOVqNv2Aajf/V7xAZbWE4Yhq7TI5JlaP4gHV2q/wmQ1+3O9Oc3ewLrgqbbxI+rBaF88
+        8wVXzM3SeMM8VSyVjIrFcGMRsipHHakkPfQQqUbU+El1+mj+lT7HU8tGBPcc6p3lnc/WPuHxQRXY
+        gEaTkXNDU0khge0vkIriKL6DSaMiy7w70SgLiDRNhKSHohWHZ7jpmzWUEHzcO+9oU66WrsHS99AY
+        bO9IXjcNuQ+DyW6+C1EqrmDLPZ7Ly+B7KB3kdtniQj7Qxbzjjwns8NnJHIp5BJyNlyWiD5y08eXa
+        vlT809Ce0RX2XNnsWO24buZpqx+uBUGDwX+Tld00CkPvc8J1SRY7yUzbmdZnWbt6PafbVBbhV/Ds
+        rx7p10ADnt/v/wEgfH1lKAMAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['418']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 19:38:53 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/foodservices/announcements.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAzWNMQ7DIBAEv2JtTWEMxMo9Ih+IrAiJk+OCOIGjsvh7zoXb2dndA5klgg4U/jWu
+        UkHu5ubJGsiWFcT8BdkwumC9D7OBImmqTaM32q41rgzCYx9SlDgUllY+nHCG8t7Ta0s64Oz9AvrW
+        u8Fpg55L/wPtm9tzhAAAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['130']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 18:54:17 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1
