@@ -19,4 +19,5 @@ By default each method returns a Python dictionary (JSON response conversion), o
 
 Changelog:
 ----------
+v0.2 - Full support for all /FEDS/ and /courses/ endpoints added.
 v0.1 - Full support for all /foodservices/ endpoints added.
