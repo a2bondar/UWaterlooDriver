@@ -35,6 +35,16 @@ class UW_Driver(object):
                 "expects two integer values (year, week) or None.".format(prefix, suffix)
             )
 
+    def __feds_get(self, suffix, event_id=None):
+        prefix = "feds"
+        endpoint = self.__update_url(prefix, suffix, event_id)
+        return self.__get_data(endpoint)
+
+    def __courses_get(self, suffix="", arg1="", arg2=""):
+        prefix = "courses"
+        endpoint = self.__update_url(prefix, arg1, arg2, suffix)
+        return self.__get_data(endpoint)
+
     ### Food Services ###
 
     def foodservices_menu(self, year=None, week=None):
@@ -68,6 +78,42 @@ class UW_Driver(object):
     def foodservices_products(self, product_id):
         suffix = "products/{}".format(product_id)
         return self.__foodservices_get(suffix)
+
+    ### FEDS ###
+
+    def feds_events(self, event_id=None):
+        suffix = "events"
+        return self.__feds_get(suffix, event_id)
+
+    def feds_locations(self):
+        suffix = "locations"
+        return self.__feds_get(suffix)
+
+    ### Course ###
+
+    def courses(self):
+        return self.__courses_get()
+
+    def courses_subject(self, subject):
+        return self.__courses_get(arg1=subject)
+
+    def courses_course_id(self, course_id):
+        return self.__courses_get(arg1=course_id)
+
+    def courses_schedule_by_class_number(self, class_num):
+        return self.__courses_get(suffix="schedule", arg1=class_num)
+
+    def courses_by_subject_catalog(self, subject, catalog):
+        return self.__courses_get(arg1=subject, arg2=catalog)
+
+    def courses_schedule_by_subject_catalog(self, subject, catalog):
+        return self.__courses_get(suffix="schedule", arg1=subject, arg2=catalog)
+
+    def courses_prerequisites(self, subject, catalog):
+        return self.__courses_get(suffix="prerequisites", arg1=subject, arg2=catalog)
+
+    def courses_examschedule(self, subject, catalog):
+        return self.__courses_get(suffix="examschedule", arg1=subject, arg2=catalog)
 
     ### Awards ###
 

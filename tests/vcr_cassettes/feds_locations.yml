@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/feds/locations.json
+  response:
+    body:
+      string: !!binary |
+        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
+        6whUNB92bLFmwNvbN7f/Agz42qLmHQAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['1848']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 23 Aug 2017 21:03:35 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

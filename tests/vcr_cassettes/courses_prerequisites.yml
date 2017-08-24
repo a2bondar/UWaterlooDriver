@@ -1,0 +1,31 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/courses/PHYS/375/prerequisites.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA11QQW6DMBD8irVnS8V2DIRbbrlUqppeKoqQA05KBYFiox4i/t4xhB56We3Ozs6M
+        fafOekPZnUb7PVnnHWUqVslecPJNB8B0A2VCR0qrdB9HnAD5CTQZYQDDmauljF7Xe+amqgJ4mVoK
+        a//Z12VTQ0KkYgPgN8+carNau+n8ZSsPkZfj+wlnFRZtfy1vU3e2I3CVaAqBfBusTt6MDvMw2pC6
+        cY23Llwvc8aCChNCsn5kQkpmbjXzPz3rL+tKqh1ncidCkSg6DiX9eFI6RRcrlERzdng+vB3Riv9e
+        5YAAFs/Ic7wpaMKNHp2UVPBcrhOsHjj8/rqNC2fimwQSPGDEgMQKxmrjLl+wRAqJimKefwGRDpPA
+        vQEAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['289']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Thu, 24 Aug 2017 01:42:40 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1
