@@ -11,7 +11,7 @@ class UW_Driver(object):
         self.base_url = base_url
 
     def __get_data(self, *args):
-        endpoint = self.__update_url(args)
+        endpoint = self.__update_url(*args)
         response = session.get("{}{}.{}".format(self.base_url, endpoint, "json"))
         json_data = response.json()
         return json_data["data"]

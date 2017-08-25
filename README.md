@@ -19,6 +19,7 @@ By default each method returns a Python dictionary (JSON response conversion), o
 
 Changelog:
 ----------
+v0.8 - Updated testing suite for /courses/ to use new methods.  
 v0.7 - Added support for /blogs/ endpoint, small changes to code base for consistency.  
 v0.6 - Full support for all /wireless/, /api/, /server/, /directory/ endpoints.  
 v0.5 - Full support for all /poi/, /transit/, and /parking/ endpoints.  

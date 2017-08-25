@@ -47,7 +47,7 @@ def test_courses_subjects(courses_keys, subject_keys):
         subject=MATH"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_subject("MATH")
+    response = uw_driver.courses(subject="MATH")
 
     assert isinstance(response, list)
     assert isinstance(response[0], dict)
@@ -56,12 +56,12 @@ def test_courses_subjects(courses_keys, subject_keys):
 
 
 @vcr.use_cassette('vcr_cassettes/courses_course_id.yml', filter_query_parameters=['key'])
-def test_courses_by_course_id(courses_keys, subject_keys, course_id_keys):
+def test_courses(courses_keys, subject_keys, course_id_keys):
     """Tests an API call to /courses/{course_id} endpoint.
         course_id=007407"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_course_id(7407)
+    response = uw_driver.courses(course_id=7407)
 
     assert isinstance(response, dict)
     assert set(courses_keys).issubset(response.keys())
@@ -75,7 +75,7 @@ def test_courses_schedule_by_class_number(schedule_keys):
         class_number=5377"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_schedule_by_class_number(5377)
+    response = uw_driver.courses_schedule(class_num=5377)
 
     assert isinstance(response, list)
     assert isinstance(response[0], dict)
@@ -88,7 +88,7 @@ def test_courses_by_subject_catalog(courses_keys, course_id_keys):
         subject=PHYS, catalog=234"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_by_subject_catalog("PHYS", 234)
+    response = uw_driver.courses(subject="PHYS", catalog_num=234)
 
     assert isinstance(response, dict)
     assert set(courses_keys).issubset(response.keys())
@@ -101,7 +101,7 @@ def test_courses_schedule_by_subject_catalog(schedule_keys):
         subject=CS, catalog=486"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_schedule_by_subject_catalog("CS", 486)
+    response = uw_driver.courses_schedule(subject="CS", catalog_num=486)
 
     assert isinstance(response, list)
     assert isinstance(response[0], dict)
