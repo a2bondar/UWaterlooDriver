@@ -71,7 +71,7 @@ class UW_Driver(object):
 
     ### FEDS ###
 
-    def feds_events(self, event_id=""):
+    def feds_events(self, event_id=None):
         prefix = "feds"
         suffix = "events"
         return self.__get_data(prefix, suffix, event_id)
@@ -149,7 +149,7 @@ class UW_Driver(object):
 
     ### Events ###
 
-    def events(self, site="", id=""):
+    def events(self, site=None, id=None):
         prefix = "events"
         return self.__get_data(prefix, site, id)
 
@@ -158,15 +158,21 @@ class UW_Driver(object):
         suffix = "holidays"
         return self.__get_data(prefix, suffix)
 
+    ### Blogs ###
+
+    def blogs(self, site, id=None):
+        prefix = "blogs"
+        return self.__get_data(prefix, site, id)
+
     ### News ###
 
-    def news(self, site="", id=""):
+    def news(self, site=None, id=None):
         prefix = "news"
         return self.__get_data(prefix, site, id)
 
     ### Opportunities ###
 
-    def opportunities(self, site="", id=""):
+    def opportunities(self, site=None, id=None):
         prefix = "opportunities"
         return self.__get_data(prefix, site, id)
 
@@ -178,7 +184,7 @@ class UW_Driver(object):
 
     ### Weather ###
 
-    def weather(self):
+    def weather_current(self):
         prefix = "weather"
         suffix = "current"
         return self.__get_data(prefix, suffix)
