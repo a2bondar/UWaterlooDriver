@@ -19,6 +19,7 @@ By default each method returns a Python dictionary (JSON response conversion), o
 
 Changelog:
 ----------
+v0.5 - Full Support for all /poi/, /transit/, and /parking/ endpoints.
 v0.4 - Full support for all /weather/, /news/, and /opportunities/ endpoints.  
 v0.3 - Full support for all /awards/, /events/, /terms/, /buildings/, /codes/, /blogs/, /watcard/, and /resources/ endpoints.  
 v0.2 - Full support for all /FEDS/ and /courses/ endpoints added.  

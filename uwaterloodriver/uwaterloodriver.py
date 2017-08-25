@@ -295,4 +295,99 @@ class UW_Driver(object):
         suffix = "vendingmachines"
         return self.__get_data(prefix, building_code, suffix)
 
+    ### Points of Interest ###
+
+    def poi_atms(self):
+        prefix = "poi"
+        suffix = "atms"
+        return self.__get_data(prefix, suffix)
+
+    def poi_greyhound(self):
+        prefix = "poi"
+        suffix = "greyhound"
+        return self.__get_data(prefix, suffix)
+
+    def poi_helplines(self):
+        prefix = "poi"
+        suffix = "helplines"
+        return self.__get_data(prefix, suffix)
+
+    def poi_libraries(self):
+        prefix = "poi"
+        suffix = "libraries"
+        return self.__get_data(prefix, suffix)
+
+    def poi_photospheres(self):
+        prefix = "poi"
+        suffix = "photospheres"
+        return self.__get_data(prefix, suffix)
+
+    def poi_defibrillators(self):
+        prefix = "poi"
+        suffix = "defibrillators"
+        return self.__get_data(prefix, suffix)
+
+    def poi_constructionsites(self):
+        prefix = "poi"
+        suffix = "constructionsites"
+        return self.__get_data(prefix, suffix)
+
+    def poi_accessibleentrances(self):
+        prefix = "poi"
+        suffix = "accessibleentrances"
+        return self.__get_data(prefix, suffix)
+
+    def poi_visitorinformation(self):
+        prefix = "poi"
+        suffix = "visitorinformation"
+        return self.__get_data(prefix, suffix)
+
+    ### Parking ###
+
+    def parking_watpark(self):
+        prefix = "parking"
+        suffix = "watpark"
+        return self.__get_data(prefix, suffix)
+
+    def parking_lots_meter(self):
+        prefix = "parking/lots"
+        suffix = "meter"
+        return self.__get_data(prefix, suffix)
+
+    def parking_lots_permit(self):
+        prefix = "parking/lots"
+        suffix = "permit"
+        return self.__get_data(prefix, suffix)
+
+    def parking_lots_visitor(self):
+        prefix = "parking/lots"
+        suffix = "visitor"
+        return self.__get_data(prefix, suffix)
+
+    def parking_lots_shortterm(self):
+        prefix = "parking/lots"
+        suffix = "shortterm"
+        return self.__get_data(prefix, suffix)
+
+    def parking_lots_accessible(self):
+        prefix = "parking/lots"
+        suffix = "accessible"
+        return self.__get_data(prefix, suffix)
+
+    def parking_lots_motorcycle(self):
+        prefix = "parking/lots"
+        suffix = "motorcycle"
+        return self.__get_data(prefix, suffix)
+
+    ### Transit ###
+
+    def transit_grt(self):
+        prefix = "transit"
+        suffix = "grt"
+        return self.__get_data(prefix, suffix)
+
+    def transit_grt_stops(self):
+        prefix = "transit/grt"
+        suffix = "stops"
+        return self.__get_data(prefix, suffix)
     
