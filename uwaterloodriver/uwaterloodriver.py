@@ -390,4 +390,90 @@ class UW_Driver(object):
         prefix = "transit/grt"
         suffix = "stops"
         return self.__get_data(prefix, suffix)
-    
+
+    ### People Director Search ###
+
+    def directory_people_search(self, user_id):
+        prefix = "directory"
+        return self.__get_data(prefix, user_id)
+
+    ### Wireless ###
+
+    def wireless_usage(self, building_code=None):
+        prefix = "wireless"
+        suffix = "usage"
+        return self.__get_data(prefix, suffix, building_code)
+
+    def wireless_clients(self):
+        prefix = "wireless"
+        suffix = "clients"
+        return self.__get_data(prefix, suffix)
+
+    def wireless_rogues(self):
+        prefix = "wireless"
+        suffix = "rogues"
+        return self.__get_data(prefix, suffix)
+
+    def wireless_auth(self):
+        prefix = "wireless"
+        suffix = "auth"
+        return self.__get_data(prefix, suffix)
+
+    def wireless_historical_usage(self, building_code=None):
+        prefix = "wireless/historical"
+        suffix = "usage"
+        return self.__get_data(prefix, suffix, building_code)
+
+    def wireless_historical_clients(self):
+        prefix = "wireless/historical"
+        suffix = "clients"
+        return self.__get_data(prefix, suffix)
+
+    def wireless_historical_rogues(self):
+        prefix = "wireless/historical"
+        suffix = "rogues"
+        return self.__get_data(prefix, suffix)
+
+    def wireless_historical_auth(self):
+        prefix = "wireless/historical"
+        suffix = "auth"
+        return self.__get_data(prefix, suffix)
+
+    ### API ###
+
+    def api_usage(self):
+        prefix = "api"
+        suffix = "usage"
+        return self.__get_data(prefix, suffix)
+
+    def api_services(self):
+        prefix = "api"
+        suffix = "services"
+        return self.__get_data(prefix, suffix)
+
+    def api_methods(self):
+        prefix = "api"
+        suffix = "methods"
+        return self.__get_data(prefix, suffix)
+
+    def api_versions(self):
+        prefix = "api"
+        suffix = "versions"
+        return self.__get_data(prefix, suffix)
+
+    def api_changelog(self):
+        prefix = "api"
+        suffix = "changelog"
+        return self.__get_data(prefix, suffix)
+
+    ### Server ###
+
+    def server_time(self):
+        prefix = "server"
+        suffix = "time"
+        return self.__get_data(prefix, suffix)
+
+    def server_codes(self):
+        prefix = "server"
+        suffix = "codes"
+        return self.__get_data(prefix, suffix)
