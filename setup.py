@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'uwaterloodriver',
   packages = ['uwaterloodriver'],
-  package_data = {'': ['LICENSE', 'README']},
+  package_data = {'': ['LICENSE', 'README.rst']},
   include_package_data = True,
   version = '1.0',
   description = 'A simple Python 3 wrapper for University of Waterloo\'s Open Data API (v2).',

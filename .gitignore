@@ -3,3 +3,5 @@
 .idea/misc.xml
 .idea/vcs.xml
 *.xml
+MANIFEST
+*.gz
