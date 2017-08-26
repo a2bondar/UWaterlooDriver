@@ -196,35 +196,35 @@ class UW_Driver(object):
         suffix = "list"
         return self.__get_data(prefix, suffix)
 
-    def terms_courses(self, term):
+    def terms_courses(self, term_id):
         prefix = "terms"
         suffix = "courses"
-        return self.__get_data(prefix, term, suffix)
+        return self.__get_data(prefix, term_id, suffix)
 
-    def terms_examschedule(self, term):
+    def terms_examschedule(self, term_id):
         prefix = "terms"
         suffix = "examschedule"
-        return self.__get_data(prefix, term, suffix)
+        return self.__get_data(prefix, term_id, suffix)
 
-    def terms_schedule(self, term, subject, catalog_number=None):
+    def terms_schedule(self, term_id, subject, catalog_number=None):
         prefix = "terms"
         suffix = "schedule"
-        return self.__get_data(prefix, term, subject, catalog_number, suffix)
+        return self.__get_data(prefix, term_id, subject, catalog_number, suffix)
 
-    def terms_enrollment(self, term, subject=None):
+    def terms_enrollment(self, term_id, subject=None):
         prefix = "terms"
         suffix = "enrollment"
-        return self.__get_data(prefix, term, subject, suffix)
+        return self.__get_data(prefix, term_id, subject, suffix)
 
-    def terms_importantdates(self, term):
+    def terms_importantdates(self, term_id):
         prefix = "terms"
         suffix = "importantdates"
-        return self.__get_data(prefix, term, suffix)
+        return self.__get_data(prefix, term_id, suffix)
 
-    def terms_infosessions(self, term):
+    def terms_infosessions(self, term_id):
         prefix = "terms"
         suffix = "infosessions"
-        return self.__get_data(prefix, term, suffix)
+        return self.__get_data(prefix, term_id, suffix)
 
     ### Resources ###
 
