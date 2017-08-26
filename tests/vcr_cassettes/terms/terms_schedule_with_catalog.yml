@@ -1,0 +1,66 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/terms/1139/MATH/115/schedule.json
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['2316']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 26 Aug 2017 16:17:35 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

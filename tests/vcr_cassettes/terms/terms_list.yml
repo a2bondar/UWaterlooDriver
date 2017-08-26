@@ -1,0 +1,30 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/terms/list.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22OTW6DMBCFrxLN2gsbAjY+QA+QLrqoosgCN7UEDvVPFAn57h2ShjqC7ZvvvW8m
+        GHRQICdw+idqHzzIsi4bXhAIZsBADSNIVtGS1/uyEAQwChGxglKCbe/VWYOEw6O/87FtMfyKPczn
+        8H3pTqbDiT1tngH6UiLQqYd6dPpqLtGfgnYDkowzAm10Ttvwn1UErL5lAc71xgdjz35eKSirQX5O
+        cLexGjesGubXPozF0u4OJLIA1QK8jw5XVkCzAG+q7//ORzKbeGbiWyaeDfEt0wuwNvGnSWQmsWUS
+        2ZDYMr0AaxOejymlX7eVJTAKAgAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['249']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 26 Aug 2017 16:18:48 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1
