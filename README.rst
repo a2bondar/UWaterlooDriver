@@ -34,14 +34,10 @@ Changelog:
 | v1.0 - Formatting fixes to be compliant with PyPi. Added install instructions.
 | v0.9 - Uploaded to PyPi for easy install.
 | v0.8 - Updated testing suite for /courses/ to use new methods.
-| v0.7 - Added support for /blogs/ endpoint, small changes to code base
-for consistency.
-| v0.6 - Full support for all /wireless/, /api/, /server/, /directory/
-endpoints.
+| v0.7 - Added support for /blogs/ endpoint, small changes to code base for consistency.
+| v0.6 - Full support for all /wireless/, /api/, /server/, /directory/ endpoints.
 | v0.5 - Full support for all /poi/, /transit/, and /parking/ endpoints.
-| v0.4 - Full support for all /weather/, /news/, and /opportunities/,
-/services/ endpoints.
-| v0.3 - Full support for all /awards/, /events/, /terms/, /buildings/,
-/codes/, and /resources/ endpoints.
+| v0.4 - Full support for all /weather/, /news/, /opportunities/, and /services/ endpoints.
+| v0.3 - Full support for all /awards/, /events/, /terms/, /buildings/, /codes/, and /resources/ endpoints.
 | v0.2 - Full support for all /FEDS/ and /courses/ endpoints added.
 | v0.1 - Full support for all /foodservices/ endpoints added.
