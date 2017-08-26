@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/courses/7407.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA41UXW8TMRD8KyvzeiT3kaQlfSpVpCIBhaYIIVKdHN8mMfjsY20TStX/zvquAaLy
+        wNP5xrOend2170WLQYr5vSD8FtEHL+bVrHpRFJkIumVAtp2YF9O8mp2cTso8EwyFyLQy5x9meLlF
+        MRfXQzz4qBSDm2hE2g4719S64SOKaXUAWO/hIRONHKSVi+SxZ4k8P5nkJxzq4/oLqsDQu8tPSwYU
+        s43b1ja2ayTGy2oiUpbBJP33UdoQW3i3u/NaeSh4L1qdDOWjKYuhV6S7oJ1l9kupvm7JRduA28C3
+        x9huiB3BKxvINVElNgQHG0etNNq3/8V2HZIMjnirz0r/lGkrg738jh4ki3aSglYGmXKzQ4hWIQWp
+        bbiDjrRVujM4bC3Vjhw22m6RgGvcH5USAmfxecM9sp4RaTjQrQ22fg7r3lhqFMtpC57DCGGPxrDg
+        paTWWa3AeaWNSZmeQSBpfau97z2wZNzuYC2JNLIPrqW2PtDgkUv6WbxeXDB68+FG3GaiI0zzo71m
+        xceWQVGUwGkWZXkGb85vLhmY9EA1OwDl6QAMn8npGR+ZCnZ02MXl4g2U09lqXE1nGbxdQFmVGfQa
+        ZVVlsLhYwCSfphlxR5FXFlPDeq2yPM3gfFhO8z/LIplT5Lzn/gYuMwfaaAxPFlLra7fZsLcmWf7I
+        zGWya91w/ue3vJgfMpklE1+t2xtstr2wcm0XQ98x7s8w+x4IGee2NdiM4Go4fg4fM1jeskCvN6Rx
+        L5w12vJ0b6TxmD3+1vy5+435UH9Bci0+RY6JhFb7NPzH/8ck5SzJpt4SrtH8G/07gC+xRWx83WCa
+        aDYVaiZ7/v4OHgiH8XH0hIA/ePi4vrfpjhuui6T6DmW64sWsSG9BJM5F7ELo5qvxarzf70fxQB3F
+        PY85GedGSq7GKWI1vrj6cL1crMbDy/I8NWi0C615llbDuyGVbLDVqjb4PVnlx6JB2rJPvmIoHh5+
+        AX33dSkbBQAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['750']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 25 Aug 2017 16:27:00 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

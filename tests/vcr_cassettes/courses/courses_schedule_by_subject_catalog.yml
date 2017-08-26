@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/courses/CS/486/schedule.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+2UW2/TMBiG/4rlG0BKNyc9rM0dGiAhcRLbtAs2Ra7ztTU4cbCdVlPV/87r9LCN
+        gYQQGkLiLn4/f+cnXvOKguT5mjv62pIPnuf9UX+SDhIedAVBVg3P06Hoj07GgyxNOKTQ4lomRAJv
+        7+WceM4/bv2Zb5WCOGsNj+awsGWhS4RIT9K9EPOV2isjkcJ1zktNKxYWxJ68s+xSOifrcPOEeVJB
+        25rZWWe8qPWSnNfhJiqXMpAz1rL3DdXshQySvdGKak9sSjPriLVe13N4as9KmI/Y6xmbttqUUfbk
+        lrjuWdsgw+FSwhpDEjF0jRgVu7GtQyCk3Veh6wU5qgNz2n/x7Kn0TCIjmm+cRL2KnqF3sy0F3S1C
+        aHx+dXx13K52JR8peXVsUXYvpoTh0Fhvf6V3MPd2oXpy7ogqZO4tU77ZJDxaef5pzX07/YxRIdnp
+        GXIr6MbOi7qtpt2AB+MRZGSJCxZHw7jdYGJxr+vgbNluxxwse+6CnmmlpWEwkTF6TrUieNc2wKFu
+        jUECI70/hO8PhxOAsd0VYr55ecqESLtCqibCwi8u2QXO8LKIHagsuhDgIgF6ZqvYCptAe0UKj7QL
+        8NCW7Wug2llj4jgKJRupMDyEi1TesQSLSfB8go5XUgfs/c5lcSvu7kEJttFqn8NRpIRQ56frXdfd
+        YR1HT5Fj/A4OaQByV3MuBI8FlAcpxZ8CaUX0pZQ3cRZvL3my89tG2fdT3jtrX4Qp1juTxlN3VBKb
+        MIbKe6Kx/qCACWOx/W4Pa75nPSY9jdO0too0iAz8wLv2wWH11sWe+AfbNigq+SC9wjCuN2h5QaYs
+        Vjos4oXTMzYCSJCBaNX905irVLKkSqvC0JIwQ2BWkps7WbaxG1QkfSjaJvaGOnkm0pOeGPeywTmG
+        I0Q+wHEQB7dJ/jrJYzF4SHL2SyRnj0Ny9igki3He/45kMcmH/0n+d0jO7r3J52fnLP3FN3ky+RnK
+        k8lvkJz9mOR0fPI4j/JDlLPdO30H5VffkczF6Oo4HfG7NN9qf5ToXVcd0fH7Ac9/gd/rzTdnT3io
+        GwoAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['802']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 25 Aug 2017 16:27:01 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

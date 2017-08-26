@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/courses/CS/486/examschedule.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA8VSy27bMBD8lQUvaQEppuTWcXQL0kuANi36QA51ETDS2iYikQofDgxD/96hIhno
+        F/RGzew8ltRJdByUqE7C8UtkH7yolqvltVxnIugOgOp6URUf5XJ1tS7LIhOAQsRYKWUGtfdqx6IS
+        39/05GNdA9zGViQ67G3zqBtYwGAGUl6jfd0qRLhRfND8SmHPdHFv6UE5p0w4XpDnOmhryG5H8pfR
+        B3Zeh2NCHlRg11pLX3s29EkFRZ91zcYzPfHWOqbotdlBqT01oC/pbktPUbdNgj27A8Y9xR4J56GM
+        +pYVPLSBR0dHGx2MEDu30GbPjk0gp/2zp3fKk0Iilu+dQt+a32P39q0KttuH0Ptqs9gs4utU+bJW
+        m4VF7TxFgjgvls8j+ZnOJ6tc7Rxzh+T8UIhhyERi02XW6DhG3f6gD+sV0qeLwzv9Ps0f4KUsRJId
+        cf6J90qn0SaJS1lc5XKdjzN4Zhce0z8A5rqSkm6+AGbTzGBRVMsJbW2tpoRvN7dUZCVAYwMjX4gh
+        +7dC+R8q/BmGv9UT5zfsAgAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['417']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 25 Aug 2017 16:23:41 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

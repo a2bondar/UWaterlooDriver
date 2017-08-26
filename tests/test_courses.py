@@ -29,7 +29,7 @@ def prereq_keys():
 def examschedule_keys():
     return ['course', 'sections']
 
-@vcr.use_cassette('vcr_cassettes/courses.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses.yml', filter_query_parameters=['key'])
 def test_courses(courses_keys):
     """Tests an API call to /courses/ endpoint."""
 
@@ -41,13 +41,13 @@ def test_courses(courses_keys):
     assert set(courses_keys).issubset(response[0].keys()), "All courses keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/courses_subjects.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses_subjects.yml', filter_query_parameters=['key'])
 def test_courses_subjects(courses_keys, subject_keys):
     """Tests an API call to /courses/{subject} endpoint.
         subject=MATH"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_subject("MATH")
+    response = uw_driver.courses(subject="MATH")
 
     assert isinstance(response, list)
     assert isinstance(response[0], dict)
@@ -55,13 +55,13 @@ def test_courses_subjects(courses_keys, subject_keys):
     assert set(subject_keys).issubset(response[0].keys()), "All subjects keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/courses_course_id.yml', filter_query_parameters=['key'])
-def test_courses_by_course_id(courses_keys, subject_keys, course_id_keys):
+@vcr.use_cassette('vcr_cassettes/courses/courses_course_id.yml', filter_query_parameters=['key'])
+def test_courses(courses_keys, subject_keys, course_id_keys):
     """Tests an API call to /courses/{course_id} endpoint.
         course_id=007407"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_course_id(7407)
+    response = uw_driver.courses(course_id=7407)
 
     assert isinstance(response, dict)
     assert set(courses_keys).issubset(response.keys())
@@ -69,46 +69,46 @@ def test_courses_by_course_id(courses_keys, subject_keys, course_id_keys):
     assert set(course_id_keys).issubset(response.keys())
 
 
-@vcr.use_cassette('vcr_cassettes/courses_schedule_course_num.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses_schedule_course_num.yml', filter_query_parameters=['key'])
 def test_courses_schedule_by_class_number(schedule_keys):
     """Tests an API call to /courses/{class_number}/schedule endpoint.
         class_number=5377"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_schedule_by_class_number(5377)
+    response = uw_driver.courses_schedule(class_num=5377)
 
     assert isinstance(response, list)
     assert isinstance(response[0], dict)
     assert set(schedule_keys).issubset(response[0].keys())
 
 
-@vcr.use_cassette('vcr_cassettes/courses_by_subject_catalog.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses_by_subject_catalog.yml', filter_query_parameters=['key'])
 def test_courses_by_subject_catalog(courses_keys, course_id_keys):
     """Tests an API call to /courses/{subject}/{catalog_number} endpoint.
         subject=PHYS, catalog=234"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_by_subject_catalog("PHYS", 234)
+    response = uw_driver.courses(subject="PHYS", catalog_num=234)
 
     assert isinstance(response, dict)
     assert set(courses_keys).issubset(response.keys())
     assert set(course_id_keys).issubset(response.keys())
 
 
-@vcr.use_cassette('vcr_cassettes/courses_schedule_by_subject_catalog.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses_schedule_by_subject_catalog.yml', filter_query_parameters=['key'])
 def test_courses_schedule_by_subject_catalog(schedule_keys):
     """Tests an API call to /courses/{subject}/{catalog_number}/schedule endpoint.
         subject=CS, catalog=486"""
 
     uw_driver = UW_Driver()
-    response = uw_driver.courses_schedule_by_subject_catalog("CS", 486)
+    response = uw_driver.courses_schedule(subject="CS", catalog_num=486)
 
     assert isinstance(response, list)
     assert isinstance(response[0], dict)
     assert set(schedule_keys).issubset(response[0].keys())
 
 
-@vcr.use_cassette('vcr_cassettes/courses_prerequisites.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses_prerequisites.yml', filter_query_parameters=['key'])
 def test_courses_prerequisites(prereq_keys):
     """Tests an API call to /courses/{subject}/{catalog_number}/prerequisites endpoint.
         subject=PHYS, catalog=375"""
@@ -120,7 +120,7 @@ def test_courses_prerequisites(prereq_keys):
     assert set(prereq_keys).issubset(response.keys())
 
 
-@vcr.use_cassette('vcr_cassettes/courses_examschedule.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/courses/courses_examschedule.yml', filter_query_parameters=['key'])
 def test_courses_examschedule(examschedule_keys):
     """Tests an API call to /courses/{subject}/{catalog_number}/examschedule endpoint.
         subject=CS, catalog=486"""

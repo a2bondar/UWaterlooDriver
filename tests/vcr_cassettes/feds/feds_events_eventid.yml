@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/feds/events/300787.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1W227jNhD9lamAAi0g21Icxxs/dXeb9AIYGyRZ7ENdLGhqZLGmSJWkojqL/HsP
+        aTuXbb+gjR8MkZw5Zy5nCH7JWg4iW3zJHP/Zsw8+W0zPpufzaZ4F1WJDtF22KGfFdH52Ojt9k2fY
+        Cj3MTooih7f3YsPZIrve+5PvpcRm3essHofGVp9VBYj5dHrcAN/DQ55VYk8dj6dFMX8zj6RBR7jl
+        5cUPHz+JwE5bCyRtpQjKmmxheq1TFC7A7qQoz0ZFOSrL23IOlEVRjIoZ/uHDpvrK4hwHzy0q9tKp
+        bg+c3TZMHz/RhbTGtkp6urFScdhR59izCZ5eRDWm6LAUHkuyNV0qI4xUQj9D+A4e35PyJMhYMwoN
+        eywq3jjmMd2Evkq4tdXaDjAKDQ5GAGxzQtitNaEBvd04gR3Awj0os4l85QlZszfGSe88g8ZUQKmx
+        Ovj6vm0RnjIwM75RHa05DMyGop+nMNjklIj/LSJpHR8joKFRsgGY1DDzxJplUHf8SG/rmh1XtN4B
+        kOlH7tClFoAx3qeq7AmZrm1ohaEb2Viro8lSGKgpOuyLe3XgTTXzamOAHSxBakjEH2MdFBKNeAEw
+        e3S/VRqfUdQqBlRb90yZJAWydR6ZJL/6sXMeCVk3pl8MQTeznGCtKU4Ccdtpu0vJDMJTWRTfHpht
+        R9ZthFH3SaI+MjUEm3dayK2zcpvTT1ZXKVchG5/TO2G2MeH3SLgSWC8/5PTh9uoqRd9G/xaFH9My
+        ll8ZxN8mcIRu0MLY4tjqsKAmhM4vVpPVZBiGMR+LPO6RCCRgx1KsJspU/Ne4a7rD52rS1ryaNBaJ
+        XWkWnukPi2r0PpVKJMoDY4zIQDTWbaPy0Gcft1PuR2FIa12FKoKT3u64EfRWa5VcZe9cLBom4all
+        8P9VmF64HZVlaPJY7TOqnW1phinu2tjmOYYUXwjr+v3PNC3Ox3SJvlGn7u8F+NGZddLmnaoOPRbY
+        EyFg8kWkqXoXQ449/mcGY8grzTXtIF+QA5rvsF47FSAmJbccgJbco/hiJJAhGufSuu+Op3ByUBBH
+        1UKrad4x4ji1XWdd6I3CNYKUUGpnUmtJrG0faMMhzTMG1B50yPspNl/7Yuxc6lQKVzbRNI7cS4wY
+        zqEr37y84T47Mbzecq+33P/zlou/15vuP3zT4X3IG+sU4236W3YR0/PZ73nWd3hn8vOXYDG7LYvF
+        9Hxx+vQS7J2GRVTZo8hqrnySVSpV0lI/HG7F1SR7ePgbvGmyED0LAAA=
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['953']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 26 Aug 2017 16:22:28 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1

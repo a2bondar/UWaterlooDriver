@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1]
+    method: GET
+    uri: https://api.uwaterloo.ca/v2/courses/PHYS/234.json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA41UXW8TMRD8KyvzeiT3kaQlfSpVpCIBhaYIIVKdHN8mMfjsY20TStX/zvquAaLy
+        wNP5xrOend2170WLQYr5vSD8FtEHL+bVrHpRVJkIumVAtp2YF9O8mp2cTsoiEwyFyLQyzzOO9l5u
+        UczF9RAPPirF4CYakbbDzjW1bviIyeTkALDew0MmGjlIKxfJY88SeX4yyU841Mf1F1SBoXeXn5YM
+        KGYbt61tbNdIjJfVRKQsg0n676O0IbbwbnfntfJQ8F60OhnKR1MWQ69Id0E7y+yXUn3dkou2AbeB
+        b4+x3RA7glc2kGuiSmwIDjaOWmm0b/+L7TokGRzxVp+V/inTVgZ7+R09SBbtJAWtDDLlZocQrUIK
+        UttwBx1pq3RncNhaqh05bLTdIgHXuD8qJQTO4vOGe2Q9I9JwoFsbbP0c1r2x1CiW0xY8hxHCHo1h
+        wUtJrbNagfNKG5MyPYNA0vpWe997YMm43cFaEmlkH1xLbX2gwSOX9LN4vbhg9ObDjbjNREeY5kd7
+        zYqPLYOiKIHTLMryDN6c31wyMOmBanYAytMBGD6T0zM+MhXs6LCLy8UbKKez1biazjJ4u4CyKjPo
+        NcqqymBxsYBJPk0z4o4iryymhvVaZXmawfmwnOZ/lkUyp8h5z/0NXGYOtNEYniyk1tdus2FvTbL8
+        kZnLZNe64fzPb3kxP2QySya+Wrc32Gx7YeXaLoa+Y9yfYfY9EDLObWuwGcHVcPwcPmawvGWBXm9I
+        4144a7Tl6d5I4zF7/K35c/cb86H+guRafIocEwmt9mn4j/+PScpZkk29JVyj+Tf6dwBfYovY+LrB
+        NNFsKtRM9vz9HTwQDuPj6AkBf/DwcX1v0x03XBdJ9R3KdMWLWZHegkici9iF0M1X49V4v9+P4oE6
+        inseczLOjZRcjVPEanxx9eF6uViNh5fleWrQaBda8yythndDKtlgq1Vt8Huyyo9Fg7Rln3zFUDw8
+        /AIksmQdGwUAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['751']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 25 Aug 2017 16:27:01 GMT']
+      Server: [Apache/2.2.15 (Red Hat)]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [PHP/5.3.3]
+    status: {code: 200, message: OK}
+version: 1
