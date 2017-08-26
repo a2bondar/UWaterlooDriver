@@ -57,7 +57,8 @@ def products_keys():
             'total_fat_percent', 'fat_saturated_g', 'fat_saturated_percent',
             'fat_trans_g', 'fat_trans_percent']
 
-@vcr.use_cassette('vcr_cassettes/foodservices_menu.yml', filter_query_parameters=['key'])
+
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_menu.yml', filter_query_parameters=['key'])
 def test_foodservices_menu(foodservices_menu_keys, date_keys):
     """Tests an API call to /foodservices/menu/ endpoint."""
 
@@ -71,7 +72,7 @@ def test_foodservices_menu(foodservices_menu_keys, date_keys):
     assert isinstance(response['outlets'], list)
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_year_week_menu.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_year_week_menu.yml', filter_query_parameters=['key'])
 def test_foodservices_year_week_menu(foodservices_menu_keys, date_keys, outlets_keys, menu_keys, meals_keys):
     """Tests an API call to /foodservices/{year}/{week}/menu endpoint.
         year = 2017, week = 20"""
@@ -88,7 +89,7 @@ def test_foodservices_year_week_menu(foodservices_menu_keys, date_keys, outlets_
     assert set(meals_keys).issubset(response['outlets'][0]['menu'][0]['meals'].keys()), "All meal keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_notes.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_notes.yml', filter_query_parameters=['key'])
 def test_foodservices_notes():
     """Tests an API call to /foodservices/notes/ endpoint."""
 
@@ -98,7 +99,7 @@ def test_foodservices_notes():
     assert isinstance(response, list)
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_year_week_notes.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_year_week_notes.yml', filter_query_parameters=['key'])
 def test_foodservices_year_week_notes(notes_keys):
     """Tests an API call to /foodservices/{year}/{week}/notes endpoint.
         year = 2017, week = 15"""
@@ -111,7 +112,7 @@ def test_foodservices_year_week_notes(notes_keys):
     assert set(notes_keys).issubset(response[0].keys()), "All notes keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_announcements.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_announcements.yml', filter_query_parameters=['key'])
 def test_foodservices_announcements():
     """Tests an API call to /foodservices/announcements/ endpoint."""
 
@@ -121,7 +122,7 @@ def test_foodservices_announcements():
     assert isinstance(response, list)
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_year_week_announcements.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_year_week_announcements.yml', filter_query_parameters=['key'])
 def test_foodservices_year_week_announcements(announce_keys):
     """Tests an API call to /foodservices/{year}/{week}/announcements endpoint.
         year = 2016, week = 16"""
@@ -134,7 +135,7 @@ def test_foodservices_year_week_announcements(announce_keys):
     assert set(announce_keys).issubset(response[0].keys()), "All notes keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_outlets.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_outlets.yml', filter_query_parameters=['key'])
 def test_foodservices_outlets(foodservices_outlets_keys):
     """Tests an API call to /foodservices/outlets endpoint."""
 
@@ -146,7 +147,7 @@ def test_foodservices_outlets(foodservices_outlets_keys):
     assert set(foodservices_outlets_keys).issubset(response[0].keys()), "All outlets keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_diets.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_diets.yml', filter_query_parameters=['key'])
 def test_foodservices_diets(diets_keys):
     """Tests an API call to /foodservices/diets endpoint."""
 
@@ -158,7 +159,7 @@ def test_foodservices_diets(diets_keys):
     assert set(diets_keys).issubset(response[0].keys()), "All outlets keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_locations.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_locations.yml', filter_query_parameters=['key'])
 def test_foodservices_locations(locations_keys):
     """Tests an API call to /foodservices/locations endpoint."""
 
@@ -170,7 +171,7 @@ def test_foodservices_locations(locations_keys):
     assert set(locations_keys).issubset(response[0].keys()), "All locations keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_watcard.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_watcard.yml', filter_query_parameters=['key'])
 def test_foodservices_watcard(watcard_keys):
     """Tests an API call to /foodservices/watcard endpoint."""
 
@@ -181,7 +182,7 @@ def test_foodservices_watcard(watcard_keys):
     assert isinstance(response[0], dict)
     assert set(watcard_keys).issubset(response[0].keys()), "All watcard keys should be present."
 
-@vcr.use_cassette('vcr_cassettes/foodservices_products.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/foodservices/foodservices_products.yml', filter_query_parameters=['key'])
 def test_foodservices_products(products_keys):
     """Tests an API call to /foodservices/products/{product_id} endpoint.
         product_id = 1386"""

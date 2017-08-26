@@ -20,7 +20,7 @@ def locations_keys():
             'opening_hours', 'special_hours', 'dates_closed']
 
 
-@vcr.use_cassette('vcr_cassettes/feds_events.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/feds/feds_events.yml', filter_query_parameters=['key'])
 def test_feds_events(feds_events_keys):
     """Tests an API call to /feds/events endpoint."""
 
@@ -32,7 +32,7 @@ def test_feds_events(feds_events_keys):
     assert set(feds_events_keys).issubset(response[0].keys()), "All events keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/foodservices_events_eventid.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/feds/feds_events_eventid.yml', filter_query_parameters=['key'])
 def test_feds_event_id(events_keys):
     """Tests an API call to /feds/events/{event_id} endpoint.
         product_id = 300787"""
@@ -45,7 +45,7 @@ def test_feds_event_id(events_keys):
     assert set(events_keys).issubset(response.keys()), "All product keys should be present."
 
 
-@vcr.use_cassette('vcr_cassettes/feds_locations.yml', filter_query_parameters=['key'])
+@vcr.use_cassette('vcr_cassettes/feds/feds_locations.yml', filter_query_parameters=['key'])
 def test_feds_locations(locations_keys):
     """Tests an API call to /feds/locations endpoint."""
 
