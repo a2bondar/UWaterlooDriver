@@ -30,6 +30,7 @@ conversion), or a list of Python dictionaries.
 Changelog:
 ----------
 
+| v1.1 - Hotfix for setup.py
 | v1.0 - Formatting fixes to be compliant with PyPi. Added install instructions.
 | v0.9 - Uploaded to PyPi for easy install.
 | v0.8 - Updated testing suite for /courses/ to use new methods.
