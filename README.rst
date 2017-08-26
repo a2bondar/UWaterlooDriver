@@ -1,7 +1,7 @@
 UWaterlooDriver
 ===============
 
-A simple Python 3 wrapper for University of Waterloo's Open Data API
+A simple Python wrapper for University of Waterloo's Open Data API
 (v2). Documentation can be found at: https://api.uwaterloo.ca
 
 Usage
