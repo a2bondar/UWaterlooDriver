@@ -9,7 +9,7 @@ Usage
 
 Install:
 
-pip install uwaterloodriver
+   pip install uwaterloodriver
 
 Basic usage:
 
